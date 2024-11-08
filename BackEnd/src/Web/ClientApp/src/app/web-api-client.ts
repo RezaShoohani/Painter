@@ -1132,6 +1132,7 @@ export class WeatherForecast implements IWeatherForecast {
     temperatureC?: number;
     temperatureF?: number;
     summary?: string | undefined;
+    reza?: string;
 
     constructor(data?: IWeatherForecast) {
         if (data) {
@@ -1148,6 +1149,7 @@ export class WeatherForecast implements IWeatherForecast {
             this.temperatureC = _data["temperatureC"];
             this.temperatureF = _data["temperatureF"];
             this.summary = _data["summary"];
+            this.reza = _data["reza"];
         }
     }
 
@@ -1164,6 +1166,7 @@ export class WeatherForecast implements IWeatherForecast {
         data["temperatureC"] = this.temperatureC;
         data["temperatureF"] = this.temperatureF;
         data["summary"] = this.summary;
+        data["reza"] = this.reza;
         return data;
     }
 }
@@ -1173,6 +1176,7 @@ export interface IWeatherForecast {
     temperatureC?: number;
     temperatureF?: number;
     summary?: string | undefined;
+    reza?: string;
 }
 
 export class SwaggerException extends Error {

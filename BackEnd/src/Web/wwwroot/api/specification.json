@@ -570,6 +570,9 @@
           "summary": {
             "type": "string",
             "nullable": true
+          },
+          "reza": {
+            "type": "string"
           }
         }
       }
